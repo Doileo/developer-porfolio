@@ -3,17 +3,17 @@
 /*-------------------*/
 
 :root {
-    /* colors */
-    --clr-black: 0 0% 8%;
-    --clr-mint-green: 153 71% 59%;
-    --clr-dark-gray: 0 0% 14%;
-    --clr-light-gray: 0 0% 85%;
-    --clr-white: 0 0% 100%;
+  /* colors */
+  --clr-black: 0 0% 8%;
+  --clr-mint-green: 153 71% 59%;
+  --clr-dark-gray: 0 0% 14%;
+  --clr-light-gray: 0 0% 85%;
+  --clr-white: 0 0% 100%;
 
-    /* Typography */
-    --h1-styles: 'Space Grotesk', sans-serif 88px bold 88px -2.5px;
-    --h2-styles: 'Space Grotesk', sans-serif 48px bold 56px -1.5px;
-    --h3-styles: 'Space Grotesk', sans-serif 24px bold 32px;
+  /* Typography */
+  --h1-styles: "Space Grotesk", sans-serif 88px bold 88px -2.5px;
+  --h2-styles: "Space Grotesk", sans-serif 48px bold 56px -1.5px;
+  --h3-styles: "Space Grotesk", sans-serif 24px bold 32px;
 }
 
 /*-------------------*/
@@ -26,33 +26,33 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Reset margins */
 body,
 h1,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* set up the body */
 body {
-    line-height: 1.5;
-    min-height: 100vh; /* it prevents short pages */
-    font-family: 'Space Grotesk', sans-serif;
-    overflow-x: hidden;
-    position: relative;
+  line-height: 1.5;
+  min-height: 100vh; /* it prevents short pages */
+  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
 /* make images easier to work with*/
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* make form elements easier to work with */
@@ -60,20 +60,20 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* remove animations for people who've turned them off*/
 
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /*------------------*/
@@ -81,14 +81,112 @@ select {
 /*------------------*/
 
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem);
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
 /* colors */
-.text-white { color: hsl( var(--clr-white) ); }
-.text-green { color: hsl( var(--clr-mint-green) ); }
-.text-light { color: hsl( var(--clr-light-gray) ); }
+.text-white {
+  color: hsl(var(--clr-white));
+}
+.text-green {
+  color: hsl(var(--clr-mint-green));
+}
+.text-light {
+  color: hsl(var(--clr-light-gray));
+}
 
 /* typography */
-.uppercase { text-transform: uppercase; }
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*  ==========================================================================
+    Author's custom styles - Mobile first design
+    ========================================================================== */
+
+/* ===================== Base Styles =========================== */
+html {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+body {
+  background: #151515;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh; /* to make sure the container takes up the full viewport height */
+  padding-inline: 3rem;
+  background-size: auto 100%; /* Set the size of the background images to auto width and 100% height */
+  background-position: left top, right bottom; /* Position the images */
+  background-repeat: no-repeat;
+  position: relative; /* Set position to relative to contain the absolute-positioned images */
+}
+
+.container::before {
+  content: "";/*Create apseudo-element to hold the left image*/
+  position: absolute; 
+  top: 40px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../assets/images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+  transform: scaleY(-1);
+}
+
+.container::after {
+  content: ""; /* Create a pseudo-element to hold the right image */
+  position: absolute;
+  bottom: -395px;
+  right: -140px;
+  width: 50%; 
+  height: 100%; 
+  background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
+  background-repeat: no-repeat;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+}
+
+nav {
+  padding-top: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li:not(:last-child) {
+  margin-right: 1.5rem; /* to add some spacing between the social links */
+}
+
+.hero-image {
+  width: 60%;
+  background: url(../assets/images/image-profile-mobile.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

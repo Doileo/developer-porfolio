@@ -26,7 +26,7 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="/" class="logo-link">adamkeyes</a>
+          <a href="/" class="logo-link text-white">adamkeyes</a>
         </div>
         <nav>
           <ul class="social-links">
@@ -54,6 +54,24 @@
             </li>
           </ul>
         </nav>
+        <div class="hero-image">
+          <picture>
+            <!-- Mobile image -->
+            <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.webp">
+            <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.png">
+            
+            <!-- Tablet image -->
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.webp">
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.png">
+            
+            <!-- Desktop image -->
+            <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.webp">
+            <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.png">
+        
+            <!-- Fallback image -->
+            <img src="./assets/images/image-profile-desktop.png" alt="Hero Image">
+          </picture>
+        </div>
       </div>
     </header>
 
