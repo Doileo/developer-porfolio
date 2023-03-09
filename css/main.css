@@ -9,11 +9,6 @@
   --clr-dark-gray: 0 0% 14%;
   --clr-light-gray: 0 0% 85%;
   --clr-white: 0 0% 100%;
-
-  /* Typography */
-  --h1-styles: "Space Grotesk", sans-serif 88px bold 88px -2.5px;
-  --h2-styles: "Space Grotesk", sans-serif 48px bold 56px -1.5px;
-  --h3-styles: "Space Grotesk", sans-serif 24px bold 32px;
 }
 
 /*-------------------*/
@@ -135,8 +130,8 @@ a {
 }
 
 .container::before {
-  content: "";/*Create apseudo-element to hold the left image*/
-  position: absolute; 
+  content: ""; /*Create apseudo-element to hold the left image*/
+  position: absolute;
   top: 40px;
   left: 0;
   width: 50%;
@@ -153,8 +148,8 @@ a {
   position: absolute;
   bottom: -395px;
   right: -140px;
-  width: 50%; 
-  height: 100%; 
+  width: 50%;
+  height: 100%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
   background-repeat: no-repeat;
 }
@@ -190,3 +185,81 @@ nav {
   background-size: cover;
   background-position: center;
 }
+
+/* ===================== Main Content =========================== */
+main {
+  padding-inline: 1.5rem;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1.13px;
+  line-height: 40px;
+  padding: 30px 0 40px;
+}
+
+.stroke {
+  border-bottom: 4px solid hsl(var(--clr-mint-green));
+}
+
+.description {
+  font-weight: 500;
+  padding-bottom: 24px;
+}
+
+.description,
+.button {
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.button {
+  font-weight: 700;
+}
+
+.button .stroke {
+  border-bottom: 2px solid hsl(var(--clr-mint-green));
+  padding-top: 12px;
+}
+
+hr {
+  margin: 80px 0 40px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 155px;
+  width: 50%;
+  height: 100%;
+  background-image: url(../assets/images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  transform: scaleX(-1);
+}
+
+.skills h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.years-of-experience {
+  font-size: 1rem;
+  margin-bottom:24px;
+}
+
+hr.section-divider {
+  margin: 40px 0 80px;
+}
+
+
