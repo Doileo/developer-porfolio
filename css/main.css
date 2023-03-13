@@ -262,4 +262,66 @@ hr.section-divider {
   margin: 40px 0 80px;
 }
 
+/* ========= Projects section ========= */
+.project-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 40px;
+  letter-spacing: -1.136;
+}
+
+.projects .button {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 2.285px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project:nth-child(2) {
+  background-image: url(../assets/images/thumbnail-project-1-small.png);
+}
+
+.project:nth-child(3) {
+  background-image: url(../assets/images/thumbnail-project-2-small.png);
+}
+
+.project:nth-child(4) {
+  background-image: url(../assets/images/thumbnail-project-3-small.png);
+}
+
+.project:nth-child(5) {
+  background-image: url(../assets/images/thumbnail-project-4-small.png);
+}
+
+.project:nth-child(6) {
+  background-image: url(../assets/images/thumbnail-project-5-small.png);
+}
+
+.project:nth-child(7) {
+  background-image: url(../assets/images/thumbnail-project-6-small.png);
+}
+
+.project:nth-child(2),
+.project:nth-child(3),
+.project:nth-child(4),
+.project:nth-child(5),
+.project:nth-child(6),
+.project:nth-child(7) {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
 
