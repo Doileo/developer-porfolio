@@ -239,7 +239,7 @@ hr {
 .skills::before {
   content: "";
   position: absolute;
-  top: 155px;
+  bottom: 840px;
   width: 50%;
   height: 100%;
   background-image: url(../assets/images/pattern-rings.svg);
@@ -255,7 +255,7 @@ hr {
 
 .years-of-experience {
   font-size: 1rem;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 }
 
 hr.section-divider {
@@ -282,8 +282,20 @@ h2 {
   letter-spacing: 2.285px;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto;
+  grid-gap: 40px;
+}
+
 .project {
-  margin-bottom: 40px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 253px; /*set the height of the image to 253px*/
 }
 
 .project:nth-child(2) {
@@ -316,12 +328,34 @@ h2 {
 .project:nth-child(5),
 .project:nth-child(6),
 .project:nth-child(7) {
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position: calc(50% - 0.1rem) 0;
+  background-size: 100% 253px;
 }
 
+.project-name {
+  position: absolute;
+  top: 250px;
+  font-size: 1.5rem;
+}
 
+.project-skills {
+  position: absolute;
+  top: 315px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  word-spacing: 18px;
+}
 
+.view-project,
+.view-code {
+  position: absolute;
+  top: 360px;
+  letter-spacing: 2.285px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
 
-
-
+.view-code {
+  padding-left: 170px;
+}
