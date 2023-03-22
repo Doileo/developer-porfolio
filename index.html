@@ -183,35 +183,33 @@
           >
         </div>
       </section>
-
-      <section class="contact">
-        <div class="contact">
-          <h2>Contact</h2>
-          <p>
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
-          </p>
-          <form
-            action="mailto:youremail@example.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required />
-
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="5" required></textarea>
-
-            <input type="submit" value="Send message" class="button-stroke" />
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer>
+      <div class="contact-container">
+        <h2>Contact</h2>
+        <p class="text-light">
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form
+          action="mailto:youremail@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="4" required></textarea>
+
+          <input type="submit" value="Send message" class="button-stroke button-stroke-bottom" />
+        </form>
+      </div>
+
       <div class="logo">
         <a href="/" class="logo-link">adamkeyes</a>
       </div>

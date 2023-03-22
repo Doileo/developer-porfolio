@@ -188,7 +188,7 @@ nav {
 
 /* ===================== Main Content =========================== */
 main {
-  padding-inline: 1.5rem;
+  padding: 0 1.5rem 5rem 1.5rem;
 }
 
 .hero-text {
@@ -359,3 +359,75 @@ h2 {
 .view-code {
   padding-left: 170px;
 }
+
+.project .stroke {
+  border-bottom: 2px solid hsl(var(--clr-mint-green));
+}
+
+/* ========= Contact section ========= */
+footer {
+  height: 834px;
+  background: hsl(var(--clr-dark-gray));
+  padding: 0 1.5rem 3.75rem 1.5rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container p {
+  text-align: center;
+  line-height: 26px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+label {
+  display: inline-block;
+  width: 343px;
+  text-align: left;
+  text-transform: uppercase;
+  color: hsl(var(--clr-light-gray));
+  font-size: 1rem;
+  letter-spacing: -0.222;
+  padding-left: 24px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+  border: none;
+  border-bottom: 1px solid #fff; /* Add bottom border of 2px and black color */
+  background: none; /* Remove the background color */
+  margin-bottom: 20px; /* Add some bottom margin */
+  width: 100%;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  color: hsl(var(--clr-white));
+  letter-spacing: 2.285px;
+  padding-bottom: 10px;
+}
+
+.button-stroke-bottom {
+  align-self: flex-end;
+  border: none;
+  border-bottom: 1px solid hsl(var(--clr-mint-green));
+  background: none; /* Remove the background color */
+}
+
+/* Fix the issue with the moving of the screen when inspecting it in mobile view*/
+
+
+
+
+
