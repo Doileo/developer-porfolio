@@ -34,6 +34,7 @@ p {
 /* set up the body */
 body {
   line-height: 1.5;
+  background: #151515;
   min-height: 100vh; /* it prevents short pages */
   font-family: "Space Grotesk", sans-serif;
   overflow-x: hidden;
@@ -105,10 +106,7 @@ html {
   color: #fff;
   font-size: 1em;
   line-height: 1.5;
-}
-
-body {
-  background: #151515;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -121,8 +119,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 60vh; /* to make sure the container takes up the full viewport height */
-  padding-inline: 3rem;
+  height: 80vh; /* to make sure the container takes up the full viewport height */
+  padding-inline: 2rem;
   background-size: auto 100%; /* Set the size of the background images to auto width and 100% height */
   background-position: left top, right bottom; /* Position the images */
   background-repeat: no-repeat;
@@ -187,8 +185,10 @@ nav {
 }
 
 /* ===================== Main Content =========================== */
-main {
-  padding: 0 1.5rem 5rem 1.5rem;
+.main-container {
+  width: 100%;
+  max-width: 720px;
+  padding-inline: 2rem;
 }
 
 .hero-text {
@@ -366,16 +366,36 @@ h2 {
 
 /* ========= Contact section ========= */
 footer {
-  height: 834px;
-  background: hsl(var(--clr-dark-gray));
-  padding: 0 1.5rem 3.75rem 1.5rem;
+  min-height: 80vh;
+  background-color: hsl(var(--clr-dark-gray));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-inline: 1.5rem;
+  max-width: 720px;
+  padding-inline: 2rem;
+}
+
+.contact-container::before {
+  content: ""; /*Create apseudo-element to hold the left image*/
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../assets/images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: -1;
+  transform: scaleY(-1);
+}
+
+.contact-container h2 {
+  text-align: center;
 }
 
 .contact-container p {
@@ -426,6 +446,25 @@ input[type="submit"] {
 }
 
 /* Fix the issue with the moving of the screen when inspecting it in mobile view*/
+
+.logo {
+  margin-top: 2rem; /* Add some top margin */
+}
+
+.logo-link {
+  font-size: 1.5rem;
+  letter-spacing: -0.333px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  margin-top: 2rem; /* Some top margin */
+}
+
+.social-links a {
+  margin: 0 0.5rem; /* Some horizontal margin between the items */
+}
 
 
 
