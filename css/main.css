@@ -119,18 +119,19 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh; /* to make sure the container takes up the full viewport height */
+  height: 60vh; /* to make sure the container takes up the full viewport height */
   padding-inline: 2rem;
   background-size: auto 100%; /* Set the size of the background images to auto width and 100% height */
   background-position: left top, right bottom; /* Position the images */
   background-repeat: no-repeat;
   position: relative; /* Set position to relative to contain the absolute-positioned images */
+  top: 80px;
 }
 
 .container::before {
   content: ""; /*Create apseudo-element to hold the left image*/
   position: absolute;
-  top: 40px;
+  top: -80px;
   left: 0;
   width: 50%;
   height: 100%;
@@ -144,8 +145,8 @@ a {
 .container::after {
   content: ""; /* Create a pseudo-element to hold the right image */
   position: absolute;
-  bottom: -395px;
-  right: -140px;
+  bottom: -270px;
+  right: -120px;
   width: 50%;
   height: 100%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
@@ -177,11 +178,13 @@ nav {
 }
 
 .hero-image {
-  width: 60%;
+  width: 55%;
   background: url(../assets/images/image-profile-mobile.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  top: -130px;
 }
 
 /* ===================== Main Content =========================== */
@@ -189,6 +192,7 @@ nav {
   width: 100%;
   max-width: 720px;
   padding-inline: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .hero-text {
@@ -239,7 +243,7 @@ hr {
 .skills::before {
   content: "";
   position: absolute;
-  bottom: 840px;
+  top: -980px;
   width: 50%;
   height: 100%;
   background-image: url(../assets/images/pattern-rings.svg);
@@ -371,6 +375,32 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+footer::before {
+  content: ""; /*Create apseudo-element to hold the left image*/
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../assets/images/pattern-rings.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  transform: scaleY(-1);
+}
+
+footer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  background-color: hsl(var(--clr-dark-gray)); /* Or the gray color you want to use */
+  z-index: -1;
 }
 
 .contact-container {
@@ -445,9 +475,22 @@ input[type="submit"] {
   background: none; /* Remove the background color */
 }
 
-/* Fix the issue with the moving of the screen when inspecting it in mobile view*/
+.section-divider-bottom {
+  border: none; /* remove the default border */
+  height: 1px; /* set the height of the line */
+  background-color: #fff; /* set the color of the line */
+  margin: 100px 0 30px; /* add some spacing around the line */
+  display: block;
+  width: 85%;
+  opacity: 0.6;
+}
 
-.logo {
+
+.logo-bottom {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.33px;
   margin-top: 2rem; /* Add some top margin */
 }
 
@@ -456,14 +499,16 @@ input[type="submit"] {
   letter-spacing: -0.333px;
 }
 
-.social-links {
+.social-links-bottom {
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  margin-top: 2rem; /* Some top margin */
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 1rem;
 }
 
-.social-links a {
-  margin: 0 0.5rem; /* Some horizontal margin between the items */
+.social-links-bottom a {
+  margin: 0 0.7rem; /* Some horizontal margin between the items */
 }
 
 
