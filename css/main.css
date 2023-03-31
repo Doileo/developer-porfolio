@@ -120,7 +120,7 @@ a {
   align-items: center;
   flex-direction: column;
   height: 60vh; /* to make sure the container takes up the full viewport height */
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   background-size: auto 100%; /* Set the size of the background images to auto width and 100% height */
   background-position: left top, right bottom; /* Position the images */
   background-repeat: no-repeat;
@@ -145,9 +145,9 @@ a {
 .container::after {
   content: ""; /* Create a pseudo-element to hold the right image */
   position: absolute;
-  bottom: -270px;
-  right: -120px;
-  width: 50%;
+  bottom: -265px;
+  left: 340px;
+  width: 20%;
   height: 100%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
   background-repeat: no-repeat;
@@ -243,7 +243,7 @@ hr {
 .skills::before {
   content: "";
   position: absolute;
-  top: -980px;
+  top: -66.25em;
   width: 50%;
   height: 100%;
   background-image: url(../assets/images/pattern-rings.svg);
