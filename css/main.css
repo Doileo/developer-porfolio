@@ -511,7 +511,213 @@ input[type="submit"] {
   margin: 0 0.7rem; /* Some horizontal margin between the items */
 }
 
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  /* Navigation */
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    padding-inline: 1.5rem;
+  }
 
+  .container::before {
+    top: -55px;
+    left: -190px;
+  }
+
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 410px; /* Adjust the position */
+    left: 690px; /* Adjust the position */
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 15%; /* Increased the size of the image */
+    height: 100%;
+    background-image: url(../assets/images/pattern-circle.svg);
+    background-repeat: no-repeat;
+  }
+
+  .sub-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    top: -150px;
+  }
+
+  nav {
+    padding-top: 0;
+  }
+  
+  .social-links {
+    position: relative;
+    right: -420px;
+    width: 90%;
+  }
+
+  .social-links li:not(:last-child) {
+    margin-right: 1.1rem; /* to add some spacing between the social links */
+  }
+
+  .hero-image {
+    width: 40%;
+    background: url(../assets/images/image-profile-tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 85px;
+    right: 10px;
+    z-index: -1;
+  }
+
+  /* ===================== Main Content =========================== */
+
+  .main-container {
+    position: relative;
+    top: -290px;
+    padding-inline: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .title {
+    width: 65%;
+    font-size: 4.5rem;
+    letter-spacing: -2.045px;
+    line-height: 72px;
+    padding-top: 40px;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    padding-top: 40px;
+    width: 65%;
+    color: hsl(var(--clr-light-gray));
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    text-align: left;
+  }
+
+  .skills::before {
+    top: -58.25em;
+    right: -20px;
+    width: 30%;
+  }
+  
+  .skills h4 {
+    font-size: 3rem;
+    letter-spacing: -1.5px;
+    margin-top: 0;
+  }
+  
+  .years-of-experience {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }   
+
+  .section-divider {
+    display: none;
+  }
+  
+  .projects {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+  
+  .project-heading {
+    grid-column: 1/3;
+  }
+  
+  .project {
+    padding: 1rem 1rem 1rem 0;
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .project-name {
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-skills {
+    color: hsl(var(--clr-light-gray));
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .view-project,
+  .view-code {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .view-project span,
+  .view-code span {
+    padding: 0.5rem;
+  }
+
+  footer::before {
+    top: 238px;
+    left: -190px;
+  }
+
+  footer::after {
+    bottom: -240px;
+    height: 240px;
+  }
+
+  .contact-container {
+    padding-inline: 10.125rem;
+  }
+
+  .contact-container h2 {
+    font-size: 4.5rem;
+    line-height: 72px;
+    letter-spacing: -2.05px;
+  }
+
+  .contact-container p {
+    font-size: 1.125rem;
+  }
+
+  .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21.5rem;
+  }
+
+  .logo-bottom,
+  .social-links-bottom {
+    margin-top: 30px;
+  }
+  
+  .logo-bottom {
+    flex: 1;
+  }
+  
+  .social-links-bottom {
+    flex: 2;
+  }  
+
+  /* Figure out how to remove the blank space between the main section and footer */
+  
+}
 
 
 
