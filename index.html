@@ -23,184 +23,186 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="sub-container">
-          <div class="logo">
-            <a href="/" class="logo-link text-white">adamkeyes</a>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="sub-container">
+            <div class="logo">
+              <a href="/" class="logo-link text-white">adamkeyes</a>
+            </div>
+            <nav>
+              <ul class="social-links">
+                <li>
+                  <a href="https://github.com"
+                    ><img src="./assets/images/icon-github.svg" alt="GitHub"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://frontendmentor.io"
+                    ><img
+                      src="./assets/images/icon-frontend-mentor.svg"
+                      alt="Frontend Mentor"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com"
+                    ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com"
+                    ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul class="social-links">
-              <li>
-                <a href="https://github.com"
-                  ><img src="./assets/images/icon-github.svg" alt="GitHub"
-                /></a>
-              </li>
-              <li>
-                <a href="https://frontendmentor.io"
-                  ><img
-                    src="./assets/images/icon-frontend-mentor.svg"
-                    alt="Frontend Mentor"
-                /></a>
-              </li>
-              <li>
-                <a href="https://linkedin.com"
-                  ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
-                /></a>
-              </li>
-              <li>
-                <a href="https://twitter.com"
-                  ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-                /></a>
-              </li>
-            </ul>
-          </nav>
+          
+          <div class="hero-image">
+            <picture>
+              <!-- Mobile image -->
+              <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.webp">
+              <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.png">
+              
+              <!-- Tablet image -->
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.webp">
+              <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.png">
+              
+              <!-- Desktop image -->
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.webp">
+              <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.png">
+          
+              <!-- Fallback image -->
+              <img src="./assets/images/image-profile-desktop.png" alt="Hero Image">
+            </picture>
+          </div>
         </div>
-        
-        <div class="hero-image">
-          <picture>
-            <!-- Mobile image -->
-            <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.webp">
-            <source media="(max-width: 767px)" srcset="./assets/images/image-profile-mobile.png">
-            
-            <!-- Tablet image -->
-            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.webp">
-            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/images/image-profile-tablet.png">
-            
-            <!-- Desktop image -->
-            <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.webp">
-            <source media="(min-width: 1024px)" srcset="./assets/images/image-profile-desktop.png">
-        
-            <!-- Fallback image -->
-            <img src="./assets/images/image-profile-desktop.png" alt="Hero Image">
-          </picture>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="main-container">
-        <section class="home">
-          <div class="hero">
-            <div class="hero-text">
-              <h1 class="title">
-                Nice to meet you! I'm <span class="stroke">Adam Keyes</span>.
-              </h1>
-              <p class="description">
-                Based in the UK, I'm a front-end developer passionate about
-                building accessible web apps that users love.
-              </p>
+      </header>
+  
+      <main>
+        <div class="main-container">
+          <section class="home">
+            <div class="hero">
+              <div class="hero-text">
+                <h1 class="title">
+                  Nice to meet you! I'm <span class="stroke">Adam Keyes</span>.
+                </h1>
+                <p class="description">
+                  Based in the UK, I'm a front-end developer passionate about
+                  building accessible web apps that users love.
+                </p>
+                <a href="#contact" class="button uppercase text-white"
+                  ><span class="stroke">Contact Me</span></a
+                >
+              </div>
+            </div>
+          </section>
+          <hr />
+    
+          <section class="skills">
+            <div>
+              <h4>HTML</h4>
+              <p class="years-of-experience">4 Years Experience</p>
+            </div>
+            <div>
+              <h4>CSS</h4>
+              <p class="years-of-experience">4 Years Experience</p>
+            </div>
+            <div>
+              <h4>JavaScript</h4>
+              <p class="years-of-experience">4 Years Experience</p>
+            </div>
+            <div>
+              <h4>Accessibility</h4>
+              <p class="years-of-experience">4 Years Experience</p>
+            </div>
+            <div>
+              <h4>React</h4>
+              <p class="years-of-experience">3 Years Experience</p>
+            </div>
+            <div>
+              <h4>Sass</h4>
+              <p class="years-of-experience">3 Years Experience</p>
+            </div>
+          </section>
+          <hr class="section-divider"/>
+    
+          <section class="projects">
+            <div class="project-heading">
+              <h2>Projects</h2>
               <a href="#contact" class="button uppercase text-white"
                 ><span class="stroke">Contact Me</span></a
               >
             </div>
-          </div>
-        </section>
-        <hr />
-  
-        <section class="skills">
-          <div>
-            <h4>HTML</h4>
-            <p class="years-of-experience">4 Years Experience</p>
-          </div>
-          <div>
-            <h4>CSS</h4>
-            <p class="years-of-experience">4 Years Experience</p>
-          </div>
-          <div>
-            <h4>JavaScript</h4>
-            <p class="years-of-experience">4 Years Experience</p>
-          </div>
-          <div>
-            <h4>Accessibility</h4>
-            <p class="years-of-experience">4 Years Experience</p>
-          </div>
-          <div>
-            <h4>React</h4>
-            <p class="years-of-experience">3 Years Experience</p>
-          </div>
-          <div>
-            <h4>Sass</h4>
-            <p class="years-of-experience">3 Years Experience</p>
-          </div>
-        </section>
-        <hr class="section-divider"/>
-  
-        <section class="projects">
-          <div class="project-heading">
-            <h2>Projects</h2>
-            <a href="#contact" class="button uppercase text-white"
-              ><span class="stroke">Contact Me</span></a
-            >
-          </div>
-          <div class="project">
-            <h3 class="project-name uppercase">Design Portfolio</h3>
-            <p class="project-skills">HTML CSS</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-  
-          <div class="project">
-            <h3 class="project-name uppercase">E-learning landing page</h3>
-            <p class="project-skills">HTML CSS</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-  
-          <div class="project">
-            <h3 class="project-name uppercase">Todo web app</h3>
-            <p class="project-skills">HTML CSS JavaScript</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-  
-          <div class="project">
-            <h3 class="project-name uppercase">Entertainment web app</h3>
-            <p class="project-skills">HTML CSS JavaScript</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-  
-          <div class="project">
-            <h3 class="project-name uppercase">Memory game</h3>
-            <p class="project-skills">HTML CSS JavaScript</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-  
-          <div class="project">
-            <h3 class="project-name uppercase">Art gallery showcase</h3>
-            <p class="project-skills">HTML CSS JavaScript</p>
-            <a href="#" class="view-project text-white"
-              ><span class="stroke">View Project</span></a
-            >
-            <a href="#" class="view-code text-white"
-              ><span class="stroke">View Code</span></a
-            >
-          </div>
-        </section>
-      </div>
-    </main>
+            <div class="project">
+              <h3 class="project-name uppercase">Design Portfolio</h3>
+              <p class="project-skills">HTML CSS</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+    
+            <div class="project">
+              <h3 class="project-name uppercase">E-learning landing page</h3>
+              <p class="project-skills">HTML CSS</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+    
+            <div class="project">
+              <h3 class="project-name uppercase">Todo web app</h3>
+              <p class="project-skills">HTML CSS JavaScript</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+    
+            <div class="project">
+              <h3 class="project-name uppercase">Entertainment web app</h3>
+              <p class="project-skills">HTML CSS JavaScript</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+    
+            <div class="project">
+              <h3 class="project-name uppercase">Memory game</h3>
+              <p class="project-skills">HTML CSS JavaScript</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+    
+            <div class="project">
+              <h3 class="project-name uppercase">Art gallery showcase</h3>
+              <p class="project-skills">HTML CSS JavaScript</p>
+              <a href="#" class="view-project text-white"
+                ><span class="stroke">View Project</span></a
+              >
+              <a href="#" class="view-code text-white"
+                ><span class="stroke">View Code</span></a
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
 
     <footer>
       <div class="contact-container">

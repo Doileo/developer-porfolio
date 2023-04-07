@@ -190,7 +190,7 @@ nav {
 /* ===================== Main Content =========================== */
 .main-container {
   width: 100%;
-  max-width: 720px;
+  /*max-width: 720px;*/
   padding-inline: 2rem;
   margin-bottom: 2.4rem;
 }
@@ -519,6 +519,7 @@ input[type="submit"] {
     justify-content: space-between;
     top: 0;
     padding-inline: 1.5rem;
+    height: 50vh;
   }
 
   .container::before {
@@ -530,7 +531,7 @@ input[type="submit"] {
     content: "";
     position: absolute;
     top: 410px; /* Adjust the position */
-    left: 690px; /* Adjust the position */
+    left: 730px; /* Adjust the position */
     transform: translateX(-50%); /* Center the image horizontally */
     width: 15%; /* Increased the size of the image */
     height: 100%;
@@ -554,7 +555,7 @@ input[type="submit"] {
   
   .social-links {
     position: relative;
-    right: -420px;
+    right: -450px;
     width: 90%;
   }
 
@@ -570,7 +571,7 @@ input[type="submit"] {
     background-position: center;
     position: relative;
     top: 85px;
-    right: 10px;
+    right: -25px;
     z-index: -1;
   }
 
@@ -578,9 +579,13 @@ input[type="submit"] {
 
   .main-container {
     position: relative;
-    top: -290px;
     padding-inline: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 60px;
+  }
+
+  .hero {
+    position: relative;
+    margin-top: -290px;
   }
 
   .hero-text {
@@ -610,9 +615,9 @@ input[type="submit"] {
   }
 
   .skills::before {
-    top: -58.25em;
-    right: -20px;
-    width: 30%;
+    top: -330px;
+    right: -5px;
+    width: 25%;
   }
   
   .skills h4 {
@@ -699,7 +704,7 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 21.5rem;
+    gap: 27rem;
   }
 
   .logo-bottom,
@@ -713,9 +718,8 @@ input[type="submit"] {
   
   .social-links-bottom {
     flex: 2;
-  }  
-
-  /* Figure out how to remove the blank space between the main section and footer */
+    width: 90%;
+  }
   
 }
 
