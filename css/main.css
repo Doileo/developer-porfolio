@@ -777,10 +777,142 @@ input[type="submit"] {
       margin: 150px 0 40px;
     }
 
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .skills::before {
+      top: -410px;
+      width: 15%;
+    }
     
+    .years-of-experience {
+      color: hsl(var(--clr-light-gray));
+    }
+
+    .projects {
+      padding-top: 0;
+      margin-top: 140px;
+      grid-column-gap: 30px;
+    }
+
+    .project-heading h2 {
+      font-size: 3.75rem;
+    }
+    
+    .project {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      overflow: hidden;
+    }
+    
+    .project img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .project:hover img {
+      transform: scale(1.1);
+    }
+    
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .project-overlay:hover {
+      opacity: 1;
+    }
+    
+    .project-overlay a {
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .project-overlay a:hover {
+      background-color: transparent;
+      color: hsl(var(--clr-mint-green));
+    }
+
+    .view-project {
+      position: absolute;
+      top: 30%;
+    }
+
+    .view-code {
+      position: absolute;
+      top: 50%;
+      padding-left: 0;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-gap: 20px 20px;
+      padding-inline: 0;
+      margin-right: 60px;
+      align-items: center; 
+    }
+    
+    .contact-container h2,
+    .contact-container p {
+      grid-column: 1 / 2;
+      text-align: left;
+    }
+    
+    .contact-container h2 {
+      font-size: 3.75re;
+      margin: 0;
+      margin-top: 84px;
+    }
+
+    .contact-container p {
+      position: relative;
+      top: -25%;
+    }
+    
+    .contact-container form {
+      grid-column: 2 / 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 140px;
+      align-items: flex-start;
+      padding-top: 0;
+      position: relative;
+      top: -22%;
+    }
+    
+    .contact-container form label {
+      margin-right: 10px;
+    }
+    
+    .contact-container form input[type="submit"] {
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+
+    .bottom-section {
+      gap: 33rem;
+    }
   }
-  
-  
 }
 
 
