@@ -154,6 +154,8 @@ a {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -243,8 +245,8 @@ hr {
 .skills::before {
   content: "";
   position: absolute;
-  top: -66.25em;
-  width: 50%;
+  top: -70.25em;
+  width: 55%;
   height: 100%;
   background-image: url(../assets/images/pattern-rings.svg);
   background-repeat: no-repeat;
@@ -485,8 +487,13 @@ input[type="submit"] {
   opacity: 0.6;
 }
 
+.bottom-section {
+  margin-top: 30px;
+}
 
 .logo-bottom {
+  display: flex;
+  justify-content: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
