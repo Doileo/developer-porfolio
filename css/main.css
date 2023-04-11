@@ -519,7 +519,7 @@ input[type="submit"] {
     justify-content: space-between;
     top: 0;
     padding-inline: 1.5rem;
-    height: 50vh;
+    height: 60vh;
   }
 
   .container::before {
@@ -530,10 +530,10 @@ input[type="submit"] {
   .container::after {
     content: "";
     position: absolute;
-    top: 410px; /* Adjust the position */
+    top: 400px; /* Adjust the position */
     left: 730px; /* Adjust the position */
     transform: translateX(-50%); /* Center the image horizontally */
-    width: 15%; /* Increased the size of the image */
+    width: 10%; /* Increased the size of the image */
     height: 100%;
     background-image: url(../assets/images/pattern-circle.svg);
     background-repeat: no-repeat;
