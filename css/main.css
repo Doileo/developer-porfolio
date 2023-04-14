@@ -731,9 +731,6 @@ input[type="submit"] {
 
   /* Styles for MEDIUM DESKTOPS here */
   @media screen and (min-width: 992px) {
-    .wrapper {
-      margin-top: 40px;
-    }
     
     .container,
     .main-container {
@@ -741,8 +738,9 @@ input[type="submit"] {
     }
 
     .container::after {
-      top:350px;
-      left: 630px;
+      top:370px;
+      left: 690px;
+      width: 30%;
     }
 
     .social-links {
@@ -791,7 +789,8 @@ input[type="submit"] {
     }
 
     .skills::before {
-      top: -410px;
+      top: -390px;
+      right: 10px;
       width: 15%;
     }
     
