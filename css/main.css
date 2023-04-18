@@ -778,6 +778,11 @@ input[type="submit"] {
       width: 55%;
     }
 
+    .button span:hover,
+    input[type="submit"]:hover {
+      color: hsl(var(--clr-mint-green));
+    }
+
     hr {
       margin: 150px 0 40px;
     }
