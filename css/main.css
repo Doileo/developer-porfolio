@@ -923,6 +923,12 @@ input[type="submit"] {
     .bottom-section {
       gap: 33rem;
     }
+
+    .social-link:hover {
+      cursor: pointer;
+      filter: brightness(85%) saturate(90%) hue-rotate(136deg) drop-shadow(0 0 5px #4EE1A0);
+    }  
+    
   }
 }
 
