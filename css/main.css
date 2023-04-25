@@ -453,6 +453,11 @@ label {
   padding-left: 24px;
 }
 
+input,
+textarea {
+  color: hsl(var(--clr-white));
+}
+
 input[type="text"], 
 input[type="email"], 
 textarea {
@@ -468,6 +473,29 @@ input[type="submit"] {
   color: hsl(var(--clr-white));
   letter-spacing: 2.285px;
   padding-bottom: 10px;
+}
+
+/* I need to fix the red border and make it by deault white*/
+
+.white-bprder {
+  border-color: white;
+}
+
+input:valid {
+  border-color: #4EE1A0;
+}
+
+input:invalid {
+  border-color: #FF0000;
+}
+
+.error-message {
+  color: #FF0000;
+  display: none;
+}
+
+.invalid-input + .error-message {
+  display: block;
 }
 
 .button-stroke-bottom {
