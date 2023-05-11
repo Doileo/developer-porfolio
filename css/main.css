@@ -462,10 +462,18 @@ input[type="text"],
 input[type="email"], 
 textarea {
   border: none;
-  border-bottom: 1px solid #fff; /* Add bottom border of 2px and black color */
-  background: none; /* Remove the background color */
-  margin-bottom: 20px; /* Add some bottom margin */
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  margin-bottom: 20px;
   width: 100%;
+  border-color: white; /* add this line to set the initial border color to white */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: white;
 }
 
 input[type="submit"] {
@@ -475,9 +483,7 @@ input[type="submit"] {
   padding-bottom: 10px;
 }
 
-/* I need to fix the red border and make it by deault white*/
-
-.white-bprder {
+.white-border {
   border-color: white;
 }
 
@@ -485,7 +491,7 @@ input:valid {
   border-color: #4EE1A0;
 }
 
-input:invalid {
+input[type="email"].invalid-input {
   border-color: #FF0000;
 }
 

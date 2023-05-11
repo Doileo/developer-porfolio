@@ -24,7 +24,7 @@ function validateEmail(emailInput) {
   // and set a custom error message for the input field
   if (!emailRegex.test(email)) {
     emailInput.classList.add('invalid-input');
-    emailInput.setCustomValidity('Sorry, invalid format here');
+    emailInput.setCustomValidity('Please enter a valid email address');
   } else {
     // Otherwise, remove the 'invalid-input' class from the input element
     // and clear the custom error message for the input field
@@ -36,6 +36,7 @@ function validateEmail(emailInput) {
 // Add event listeners to the name and email input fields to validate the input
 nameInput.addEventListener('input', () => validateName(nameInput));
 emailInput.addEventListener('input', () => validateEmail(emailInput));
+
 
 
 
