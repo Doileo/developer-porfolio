@@ -145,10 +145,10 @@ a {
 .container::after {
   content: ""; /* Create a pseudo-element to hold the right image */
   position: absolute;
-  bottom: -265px;
-  left: 340px;
-  width: 20%;
-  height: 100%;
+  bottom: 30px;
+  left: 70%;
+  width: 30%;
+  height: 50%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
   background-repeat: no-repeat;
 }
@@ -408,7 +408,6 @@ footer::after {
 .contact-container {
   align-items: center;
   padding-inline: 1.5rem;
-  max-width: 720px;
   padding-inline: 2rem;
 }
 
@@ -729,6 +728,7 @@ input[type="email"].invalid-input {
 
   .contact-container {
     padding-inline: 10.125rem;
+    max-width: 720px;
   }
 
   .contact-container h2 {
@@ -761,7 +761,6 @@ input[type="email"].invalid-input {
     flex: 2;
     width: 90%;
   }
-
 
   /* Styles for MEDIUM DESKTOPS here */
   @media screen and (min-width: 992px) {
@@ -923,7 +922,7 @@ input[type="email"].invalid-input {
     }
     
     .contact-container h2 {
-      font-size: 3.75re;
+      font-size: 3.75rem;
       margin: 0;
       margin-top: 84px;
     }
@@ -961,8 +960,59 @@ input[type="email"].invalid-input {
     .social-link:hover {
       cursor: pointer;
       filter: brightness(85%) saturate(90%) hue-rotate(136deg) drop-shadow(0 0 5px #4EE1A0);
-    }  
-    
+    }   
+  }
+
+  /* Styles for Large Desktops here */
+  @media screen and (min-width: 1200px) {
+    .container::after {
+      top:410px;
+      left: 830px;
+      width: 30%;
+    }
+
+    .skills::before {
+      top: -280px;
+      right: 5px;
+      width: 20%;
+    }
+
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-items: center;
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .project-heading {
+      grid-column: 1 / -1;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .project-heading h2 {
+      margin: 0;
+    }
+
+    .project-heading a {
+      margin-left: 38.125em;
+    }
+
+    .main-container hr {
+      margin-top: 190px;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr; /* Decrease second column width */
+      grid-gap: 20px; /* Reduce grid gap */
+      padding-inline: 6rem;
+      align-items: center; 
+    } 
   }
 }
 
