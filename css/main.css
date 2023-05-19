@@ -745,7 +745,7 @@ input[type="email"].invalid-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 27rem;
+    gap: 21rem;
   }
 
   .logo-bottom,
@@ -954,7 +954,7 @@ input[type="email"].invalid-input {
     }
 
     .bottom-section {
-      gap: 33rem;
+      gap: 44rem;
     }
 
     .social-link:hover {
@@ -1010,9 +1010,13 @@ input[type="email"].invalid-input {
       display: grid;
       grid-template-columns: 2fr 1fr; /* Decrease second column width */
       grid-gap: 20px; /* Reduce grid gap */
-      padding-inline: 6rem;
-      align-items: center; 
+      align-items: center;
+      margin-right: 260px;
     } 
+
+    .contact-container form {
+      margin-left: 380px;
+    }
   }
 }
 
