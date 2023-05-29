@@ -146,8 +146,8 @@ a {
   content: ""; /* Create a pseudo-element to hold the right image */
   position: absolute;
   bottom: 30px;
-  left: 70%;
-  width: 30%;
+  left: 75%;
+  width: 35%;
   height: 50%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
   background-repeat: no-repeat;
@@ -970,11 +970,45 @@ input[type="email"].invalid-input {
   }
 
   /* Styles for Large Desktops here */
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
+    .container {
+      gap:4rem;
+    }
+
+    .container,
+    .main-container {
+      padding-inline: 4rem;
+    }
+
+    .container::before {
+      left: -260px;
+    }
+
     .container::after {
       top:410px;
-      left: 830px;
+      left: 800px;
       width: 30%;
+    }
+
+    .sub-container {
+      top: -180px;
+    }
+
+    .social-links {
+      left: 790px;
+    }
+
+    .hero-image {
+      right: 10px;
+      top: 60px;
+    }
+
+    .hero {
+      margin-top: -370px;
+    }
+
+    .title {
+      width: 80%;
     }
 
     .skills::before {
