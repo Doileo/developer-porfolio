@@ -146,8 +146,8 @@ a {
   content: ""; /* Create a pseudo-element to hold the right image */
   position: absolute;
   bottom: 30px;
-  left: 75%;
-  width: 35%;
+  left: 85%;
+  width: 20%;
   height: 50%;
   background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
   background-repeat: no-repeat;
@@ -512,7 +512,7 @@ input[type="email"].invalid-input {
 .button-stroke-bottom {
   align-self: flex-end;
   border: none;
-  border-bottom: 1px solid hsl(var(--clr-mint-green));
+  border-bottom: 2px solid hsl(var(--clr-mint-green));
   background: none; /* Remove the background color */
 }
 
@@ -1046,20 +1046,36 @@ input[type="email"].invalid-input {
       margin-top: 190px;
     }
 
+    footer::before {
+      top: 60px;
+    }
+
     .contact-container {
       display: grid;
       grid-template-columns: 2fr 1fr; /* Decrease second column width */
       grid-gap: 20px; /* Reduce grid gap */
       align-items: center;
-      margin-right: 260px;
-    } 
+      margin-right: 360px;
+    }
+
+    .contact-container h2 {
+      font-size: 5.5rem;
+    }
+
+    .contact-container p {
+      line-height: 28px;
+    }
 
     .contact-container form {
       margin-left: 380px;
     }
 
+    .section-divider-bottom {
+      width: 90%;
+    }
+
     .bottom-section {
-      gap: 44rem;
+      gap: 48rem;
     }
   }
 }
