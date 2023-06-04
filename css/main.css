@@ -969,6 +969,7 @@ input[type="email"].invalid-input {
     }   
   }
 
+
   /* Styles for Large Desktops here */
   @media (min-width: 1200px) {
     .container {
@@ -1078,6 +1079,20 @@ input[type="email"].invalid-input {
       gap: 48rem;
     }
   }
+
+
+  /* Sstyles for screens wider than 1400px here */
+  @media screen and (min-width: 1400px) {
+    .container {
+      margin-top: 50px;
+    }
+
+    .hero-image {
+      margin-top: 40px;
+      top: 15px;
+      width: 30%;
+    }
+  }  
 }
 
 
