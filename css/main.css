@@ -1087,10 +1087,32 @@ input[type="email"].invalid-input {
       margin-top: 50px;
     }
 
+    .container::after {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: calc(70% + 50px);
+      width: 20%;
+      height: 50%;
+      background-image: url(../assets/images/pattern-circle.svg);
+      background-repeat: no-repeat;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-left: 190px;
+    }
+
     .hero-image {
       margin-top: 40px;
       top: 15px;
       width: 30%;
+    }
+
+    footer::before {
+      left: -235px;
     }
   }  
 }
