@@ -1,7 +1,3 @@
-/*-------------------*/
-/* Custom properties */
-/*-------------------*/
-
 :root {
   /* colors */
   --clr-black: 0, 0%, 8%;
@@ -11,37 +7,29 @@
   --clr-white: 0, 0%, 100%;
 }
 
-/*-------------------*/
-/* Reset             */
-/*------------------ */
+/* Reset */
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
-/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Reset margins */
-body,
-h1,
-p {
+body {
   margin: 0;
 }
 
-/* set up the body */
 body {
   line-height: 1.5;
   background: #151515;
-  min-height: 100vh; /* it prevents short pages */
+  min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
   overflow-x: hidden;
   position: relative;
 }
 
-/* make images easier to work with*/
 img {
   max-width: 100%;
   display: block;
@@ -49,9 +37,10 @@ img {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* make form elements easier to work with */
 input,
 button,
 textarea,
@@ -59,35 +48,20 @@ select {
   font: inherit;
 }
 
-/* remove animations for people who've turned them off*/
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/*------------------*/
 /* Utility classes  */
-/*------------------*/
-
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
 }
 
-/* colors */
 .text-white {
   color: hsl(var(--clr-white));
 }
+
 .text-green {
   color: hsl(var(--clr-mint-green));
 }
+
 .text-light {
   color: hsl(var(--clr-light-gray));
 }
@@ -119,17 +93,17 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 60vh; /* to make sure the container takes up the full viewport height */
+  height: 60vh; 
   padding-inline: 1rem;
-  background-size: auto 100%; /* Set the size of the background images to auto width and 100% height */
-  background-position: left top, right bottom; /* Position the images */
+  background-size: auto 100%;
+  background-position: left top, right bottom;
   background-repeat: no-repeat;
-  position: relative; /* Set position to relative to contain the absolute-positioned images */
+  position: relative; 
   top: 80px;
 }
 
 .container::before {
-  content: ""; /*Create apseudo-element to hold the left image*/
+  content: "";
   position: absolute;
   top: -80px;
   left: 0;
@@ -143,13 +117,13 @@ a {
 }
 
 .container::after {
-  content: ""; /* Create a pseudo-element to hold the right image */
+  content: "";
   position: absolute;
   bottom: 30px;
   left: 85%;
   width: 20%;
   height: 50%;
-  background-image: url(../assets/images/pattern-circle.svg); /* Set the path to the image */
+  background-image: url(../assets/images/pattern-circle.svg);
   background-repeat: no-repeat;
 }
 
@@ -176,7 +150,7 @@ nav {
 }
 
 .social-links li:not(:last-child) {
-  margin-right: 1.5rem; /* to add some spacing between the social links */
+  margin-right: 1.5rem;
 }
 
 .hero-image {
@@ -307,7 +281,7 @@ h2 {
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 253px; /*set the height of the image to 253px*/
+  background-size: auto 253px;
 }
 
 .project:nth-child(2) {
@@ -387,7 +361,7 @@ footer {
 }
 
 footer::before {
-  content: ""; /*Create apseudo-element to hold the left image*/
+  content: "";
   position: absolute;
   top: 98px;
   left: 0;
@@ -407,7 +381,7 @@ footer::after {
   left: 0;
   width: 100%;
   height: 170px;
-  background-color: hsl(var(--clr-dark-gray)); /* Or the gray color you want to use */
+  background-color: hsl(var(--clr-dark-gray));
   z-index: -1;
 }
 
@@ -418,7 +392,7 @@ footer::after {
 }
 
 .contact-container::before {
-  content: ""; /*Create apseudo-element to hold the left image*/
+  content: "";
   position: absolute;
   top: 40px;
   left: 0;
@@ -471,7 +445,7 @@ textarea {
   background-color: transparent;
   margin-bottom: 20px;
   width: 100%;
-  border-color: white; /* add this line to set the initial border color to white */
+  border-color: white;
 }
 
 input[type="text"]:focus,
@@ -517,10 +491,10 @@ input[type="email"].invalid-input {
 }
 
 .section-divider-bottom {
-  border: none; /* remove the default border */
-  height: 1px; /* set the height of the line */
-  background-color: #fff; /* set the color of the line */
-  margin: 100px 0 30px; /* add some spacing around the line */
+  border: none; 
+  height: 1px;
+  background-color: #fff;
+  margin: 100px 0 30px;
   display: block;
   width: 85%;
   opacity: 0.6;
@@ -537,7 +511,7 @@ input[type="email"].invalid-input {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.33px;
-  margin-top: 2rem; /* Add some top margin */
+  margin-top: 2rem;
 }
 
 .logo-link {
@@ -554,18 +528,19 @@ input[type="email"].invalid-input {
 }
 
 .social-links-bottom a {
-  margin: 0 0.7rem; /* Some horizontal margin between the items */
+  margin: 0 0.7rem;
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
   /* Navigation */
   .container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    top: 0;
-    padding-inline: 1.5rem;
-    height: 60vh;
+    padding: 0;
+    top: -85px;
+    height: 100%;
   }
 
   .container::before {
@@ -576,23 +551,29 @@ input[type="email"].invalid-input {
   .container::after {
     content: "";
     position: absolute;
-    top: 400px; /* Adjust the position */
-    left: 730px; /* Adjust the position */
-    transform: translateX(-50%); /* Center the image horizontally */
-    width: 10%; /* Increased the size of the image */
+    top: 440px;
+    left: 710px;
+    transform: translateX(-50%);
+    width: 15%;
     height: 100%;
     background-image: url(../assets/images/pattern-circle.svg);
     background-repeat: no-repeat;
-  }
+}
 
   .sub-container {
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
     flex-direction: row;
     align-items: center;
     height: 80px;
     position: relative;
     top: -150px;
+    padding-left: 1.5rem;
+  }
+
+  .logo {
+    padding-right: 80px;
   }
 
   nav {
@@ -601,27 +582,24 @@ input[type="email"].invalid-input {
   
   .social-links {
     position: relative;
-    right: -450px;
+    left: 300px;
     width: 90%;
   }
 
   .social-links li:not(:last-child) {
-    margin-right: 1.1rem; /* to add some spacing between the social links */
+    margin-right: 1.1rem;
   }
 
   .hero-image {
     width: 40%;
-    background: url(../assets/images/image-profile-tablet.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(../assets/images/image-profile-tablet.webp) no-repeat center / cover;
     position: relative;
     top: 85px;
-    right: -25px;
+    right: -1px;
     z-index: -1;
   }
 
-  /* ===================== Main Content =========================== */
+  /* Main Content */
 
   .main-container {
     position: relative;
@@ -631,7 +609,7 @@ input[type="email"].invalid-input {
 
   .hero {
     position: relative;
-    margin-top: -290px;
+    margin-top: -530px;
   }
 
   .hero-text {
@@ -644,6 +622,7 @@ input[type="email"].invalid-input {
     letter-spacing: -2.045px;
     line-height: 72px;
     padding-top: 40px;
+    margin-bottom: 0;
   }
 
   .description {
@@ -661,6 +640,7 @@ input[type="email"].invalid-input {
   }
 
   .skills::before {
+    content: "";
     top: -330px;
     right: -5px;
     width: 25%;
@@ -722,16 +702,20 @@ input[type="email"].invalid-input {
     padding: 0.5rem;
   }
 
+  /* Footer */
   footer::before {
+    content: "";
     top: 238px;
     left: -190px;
   }
 
   footer::after {
+    content: "";
     bottom: -240px;
     height: 240px;
   }
 
+  /* Contact Section */
   .contact-container {
     padding-inline: 10.125rem;
     max-width: 720px;
@@ -751,7 +735,6 @@ input[type="email"].invalid-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 21rem;
   }
 
   .logo-bottom,
@@ -959,8 +942,24 @@ input[type="email"].invalid-input {
       margin-top: 10px;
     }
 
+    .section-divider-bottom {
+      width: 90%;
+    }
+
     .bottom-section {
-      gap: 33rem;
+      gap: 9;
+    }
+
+    .logo-bottom {
+      cursor: pointer;
+    }
+
+    .logo-bottom .logo-link:hover {
+      color: #4EE1A0;
+    }
+
+    .social-links-bottom {
+      margin-left: 5rem;
     }
 
     .social-link:hover {
