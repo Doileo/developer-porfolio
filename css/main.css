@@ -735,6 +735,7 @@ input[type="email"].invalid-input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 7rem;
   }
 
   .logo-bottom,
@@ -744,11 +745,13 @@ input[type="email"].invalid-input {
   
   .logo-bottom {
     flex: 1;
+    margin-right: 2rem;
   }
   
   .social-links-bottom {
     flex: 2;
     width: 90%;
+    margin-left: 5rem;
   }
 
   /* Styles for MEDIUM DESKTOPS here */
@@ -760,13 +763,17 @@ input[type="email"].invalid-input {
     }
 
     .container::after {
-      top:370px;
-      left: 690px;
+      top: 470px;
+      left: 670px;
       width: 30%;
     }
 
+    .sub-container {
+      padding: 0;
+    }
+
     .social-links {
-      right: -525px;
+      margin-left: 25px;
     }
 
     .hero-image {
@@ -776,12 +783,11 @@ input[type="email"].invalid-input {
       background-size: cover;
       background-position: center;
       position: relative;
-      right: -25px;
       z-index: -1;
     }
 
     .hero {
-      margin-top: -260px;
+      margin-top: -500px;
     }
 
     .hero-text {
@@ -793,11 +799,12 @@ input[type="email"].invalid-input {
       letter-spacing: -2.5px;
       line-height: 88px;
       width: 90%;
+      margin: 0;
     }
 
     .description {
       padding-top: 20px;
-      width: 55%;
+      width: 60%;
     }
 
     .button span:hover,
@@ -898,7 +905,7 @@ input[type="email"].invalid-input {
     .contact-container {
       display: grid;
       grid-template-columns: 1fr auto;
-      grid-gap: 20px 20px;
+      grid-gap: 20px 70px;
       padding-inline: 0;
       margin-right: 60px;
       align-items: center; 
@@ -943,11 +950,11 @@ input[type="email"].invalid-input {
     }
 
     .section-divider-bottom {
-      width: 90%;
+      width: 80%;
     }
 
     .bottom-section {
-      gap: 9;
+      gap: 5rem;
     }
 
     .logo-bottom {
