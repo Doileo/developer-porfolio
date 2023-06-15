@@ -979,12 +979,12 @@ input[type="email"].invalid-input {
   /* Styles for Large Desktops here */
   @media (min-width: 1200px) {
     .container {
-      gap:4rem;
+      gap: 4rem;
     }
 
     .container,
     .main-container {
-      padding-inline: 4rem;
+      padding-inline: 7rem;
     }
 
     .container::before {
@@ -992,7 +992,7 @@ input[type="email"].invalid-input {
     }
 
     .container::after {
-      top:410px;
+      top: 490px;
       left: 800px;
       width: 30%;
     }
@@ -1002,7 +1002,7 @@ input[type="email"].invalid-input {
     }
 
     .social-links {
-      left: 790px;
+      left: 500px;
     }
 
     .hero-image {
@@ -1011,7 +1011,7 @@ input[type="email"].invalid-input {
     }
 
     .hero {
-      margin-top: -370px;
+      margin-top: -520px;
     }
 
     .title {
@@ -1046,7 +1046,7 @@ input[type="email"].invalid-input {
     }
 
     .project-heading a {
-      margin-left: 38.125em;
+      margin-left: 38.125rem;
     }
 
     .main-container hr {
@@ -1059,10 +1059,11 @@ input[type="email"].invalid-input {
 
     .contact-container {
       display: grid;
-      grid-template-columns: 2fr 1fr; /* Decrease second column width */
-      grid-gap: 20px; /* Reduce grid gap */
+      grid-template-columns: 2fr 1fr; 
+      grid-gap: 20px;
       align-items: center;
-      margin-right: 360px;
+      margin-right: 320px;
+      padding-left: 1.5rem;
     }
 
     .contact-container h2 {
@@ -1074,15 +1075,15 @@ input[type="email"].invalid-input {
     }
 
     .contact-container form {
-      margin-left: 380px;
+      margin-left: 290px;
     }
 
     .section-divider-bottom {
-      width: 90%;
+      width: 85%;
     }
 
     .bottom-section {
-      gap: 48rem;
+      gap: 37rem;
     }
   }
 
