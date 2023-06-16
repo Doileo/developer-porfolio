@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-end Developer portfolio</title>
 
     <link
@@ -10,15 +10,16 @@
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
-    >
-    <link rel="stylesheet" href="css/main.css">
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -34,26 +35,26 @@
                 <li>
                   <a href="https://github.com"
                     ><img src="./assets/images/icon-github.svg" alt="GitHub"
-                  ></a>
+                  /></a>
                 </li>
                 <li>
                   <a href="https://frontendmentor.io"
                     ><img
                       src="./assets/images/icon-frontend-mentor.svg"
                       alt="Frontend Mentor"
-                      ></a>
+                  /></a>
                 </li>
                 <li>
                   <a href="https://linkedin.com"
                     ><img
                       src="./assets/images/icon-linkedin.svg"
                       alt="LinkedIn"
-                  ></a>
+                  /></a>
                 </li>
                 <li>
                   <a href="https://twitter.com"
                     ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-                  ></a>
+                  /></a>
                 </li>
               </ul>
             </nav>
@@ -65,37 +66,37 @@
               <source
                 media="(max-width: 767px)"
                 srcset="./assets/images/image-profile-mobile.webp"
-              >
+              />
               <source
                 media="(max-width: 767px)"
                 srcset="./assets/images/image-profile-mobile.png"
-              >
+              />
 
               <!-- Tablet image -->
               <source
                 media="(min-width: 768px) and (max-width: 1023px)"
                 srcset="./assets/images/image-profile-tablet.webp"
-              >
+              />
               <source
                 media="(min-width: 768px) and (max-width: 1023px)"
                 srcset="./assets/images/image-profile-tablet.png"
-              >
+              />
 
               <!-- Desktop image -->
               <source
                 media="(min-width: 1024px)"
                 srcset="./assets/images/image-profile-desktop.webp"
-              >
+              />
               <source
                 media="(min-width: 1024px)"
                 srcset="./assets/images/image-profile-desktop.png"
-              >
+              />
 
               <!-- Fallback image -->
               <img
                 src="./assets/images/image-profile-desktop.png"
                 alt="Hero Image"
-              >
+              />
             </picture>
           </div>
         </div>
@@ -119,7 +120,7 @@
               </div>
             </div>
           </section>
-          <hr>
+          <hr />
 
           <section class="skills">
             <div>
@@ -147,7 +148,7 @@
               <p class="years-of-experience">3 Years Experience</p>
             </div>
           </section>
-          <hr class="section-divider">
+          <hr class="section-divider" />
 
           <section class="projects">
             <div class="project-heading">
@@ -240,54 +241,70 @@
 
     <footer>
       <div class="contact-container">
-        <h2>Contact</h2>
-        <p class="text-light">
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
-        </p>
-        <form
-          action="mailto:youremail@example.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" class="white-border" required>
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="white-border" required>
-          <div class="error-message">Sorry, invalid format here</div>
-
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="4" required></textarea>
-
-          <input
-            type="submit"
-            value="Send message"
-            class="button-stroke button-stroke-bottom"
+        <div class="contact-column">
+          <h2>Contact</h2>
+          <p class="text-light">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+        <div class="form-column">
+          <form
+            action="mailto:youremail@example.com"
+            method="post"
+            enctype="text/plain"
           >
-        </form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="white-border"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="white-border"
+              required
+            />
+            <div class="error-message">Sorry, invalid format here</div>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <input
+              type="submit"
+              value="Send message"
+              class="button-stroke button-stroke-bottom"
+            />
+          </form>
+        </div>
       </div>
-      <hr class="section-divider-bottom">
+      <hr class="section-divider-bottom" />
 
       <div class="bottom-section">
         <div class="logo-bottom">
-          <a href='#' class="logo-link text-white">adamkeyes</a>
+          <a href="#" class="logo-link text-white">adamkeyes</a>
         </div>
         <div class="social-links-bottom">
           <a href="https://github.com" class="social-link"
             ><img src="./assets/images/icon-github.svg" alt="GitHub"
-          ></a>
+          /></a>
           <a href="https://frontendmentor.io" class="social-link"
             ><img
               src="./assets/images/icon-frontend-mentor.svg"
               alt="Frontend Mentor"
-          ></a>
+          /></a>
           <a href="https://linkedin.com" class="social-link"
             ><img src="./assets/images/icon-linkedin.svg" alt="LinkedIn"
-          ></a>
+          /></a>
           <a href="https://twitter.com" class="social-link"
             ><img src="./assets/images/icon-twitter.svg" alt="Twitter"
-          ></a>
+          /></a>
         </div>
       </div>
     </footer>
